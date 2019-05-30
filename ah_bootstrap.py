@@ -477,7 +477,7 @@ def _check_submodule_using_git(path, offline):
                 stdout, path))
         return False
 
-
+    """what is this mean"""
 def _check_submodule_no_git(path):
     """
     Like ``_check_submodule_using_git``, but simply parses the .gitmodules file
