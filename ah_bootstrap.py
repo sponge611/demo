@@ -55,7 +55,8 @@ else:
     _str_types = (str, bytes)
     _text_type = str
     PY3 = True
-
+"""23
+12354"""
 # Some pre-setuptools checks to ensure that either distribute or setuptools >=
 # 0.7 is used (over pre-distribute setuptools) if it is available on the path;
 # otherwise the latest setuptools will be downloaded and bootstrapped with
