@@ -432,7 +432,9 @@ def _check_submodule_using_git(path, offline):
                 'An unexpected error occurred when running the '
                 '`git submodule status` command:\n{0}'.format(str(e)))
 
-
+    """
+    Why you do this here?
+    """
     # Can fail of the default locale is not configured properly.  See
     # https://github.com/astropy/astropy/issues/2749.  For the purposes under
     # consideration 'latin1' is an acceptable fallback.
@@ -512,7 +514,7 @@ def _check_submodule_no_git(path):
                 continue
 
             gitmodules_fileobj.write(line)
-
+    """What's the meaning of this module"""
     gitmodules_fileobj.seek(0)
 
     cfg = RawConfigParser()
@@ -566,7 +568,7 @@ def _update_submodule(submodule, status, offline):
                  'conflicts or errors.\n{2}'.format(status, submodule,
                                                     _err_help_msg))
         return
-
+    """How it can be done"""
     err_msg = None
 
     cmd = ['git', 'submodule'] + cmd + ['--', submodule]
